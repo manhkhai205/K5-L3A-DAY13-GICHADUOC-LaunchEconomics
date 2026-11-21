@@ -5,16 +5,16 @@
 - Tên nhóm: `GICHADUOC`
 - Lớp: `L3A`
 - Repo nhóm: `K5-L3A-DAY13-GICHADUOC-LaunchEconomics` (xem [SUBMISSION.md](SUBMISSION.md))
-- URL repo, nhánh nộp, commit chốt: https://github.com/manhkhai205/K5-L3A-DAY13-GICHADUOC-LaunchEconomics · nhánh `main` · commit chốt *(cập nhật trước khi nộp)*
+- URL repo, nhánh nộp, commit chốt: https://github.com/manhkhai205/K5-L3A-DAY13-GICHADUOC-LaunchEconomics · nhánh `main` · commit chốt _(cập nhật trước khi nộp)_
 
 ## Thành viên
 
-| STT | Họ tên                | MSSV        | Email                   | GitHub | Vai trò              |
-| --- | --------------------- | ----------- | ----------------------- | ------ | -------------------- |
-| 1   | Nguyễn Viết Mạnh Khải | 2A202603664 | manhkhai205@gmail.com   | manhkhai205 | **Người gắn nhãn 1** |
-| 2   | Nguyễn Đình Quang     | 2A202603620 | quang8b9b@gmail.com     | Quang-safjl | **Người viết code**  |
-| 3   | Vũ Đức Anh            | 2A202603573 | vuducanh039@gmail.com   |             | **Người kiểm số**    |
-| 4   | Nguyễn Cảnh Hiếu      | 2A202603667 | hieucoi098765@gmail.com | canhhieu02 | **Người gắn nhãn 2, kiêm giữ hồ sơ** |
+| STT | Họ tên                | MSSV        | Email                   | GitHub      | Vai trò                              |
+| --- | --------------------- | ----------- | ----------------------- | ----------- | ------------------------------------ |
+| 1   | Nguyễn Viết Mạnh Khải | 2A202603664 | manhkhai205@gmail.com   | manhkhai205 | **Người gắn nhãn 1**                 |
+| 2   | Nguyễn Đình Quang     | 2A202603620 | quang8b9b@gmail.com     | Quang-safjl | **Người viết code**                  |
+| 3   | Vũ Đức Anh            | 2A202603573 | vuducanh039@gmail.com   | ducanh005   | **Người kiểm số**                    |
+| 4   | Nguyễn Cảnh Hiếu      | 2A202603667 | hieucoi098765@gmail.com | canhhieu02  | **Người gắn nhãn 2, kiêm giữ hồ sơ** |
 
 Bốn vai của lab:
 
