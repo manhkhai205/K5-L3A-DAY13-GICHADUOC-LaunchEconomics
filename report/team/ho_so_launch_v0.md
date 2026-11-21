@@ -2,7 +2,7 @@
 
 Một trang. Cột trạng thái chỉ nhận: **Xong, có bằng chứng · Chưa · Giả lập**. Mục nào dựa trên cột `_simulated` ghi Giả lập. Người phụ trách là một vai trò, không ghi "cả đội". Gate 2a chỉ duyệt kế hoạch pilot: không viết như thể trợ lý đã được duyệt chạy chính thức (xem quy tắc 5 trong `README.md`).
 
-Nhóm: ... · Lớp: ...
+Nhóm: GICHADUOC · Lớp: L3A
 
 | Mục | Con số chính | Trạng thái | Người phụ trách |
 | --- | --- | --- | --- |
@@ -11,7 +11,7 @@ Nhóm: ... · Lớp: ...
 | 3 · So với nhân viên tự làm | Phạm vi pilot `noi_dia` + `hang_nang`: **4.599 đ = 0,38×** của 12.000 đ, đã cộng cố định 40 tr/tháng ở 45.000 yêu cầu/tháng; **0,48×** nếu khối lượng còn một nửa [simulated]. Cả hệ thống, mọi loại, tính cả 222 ca nhân viên làm thay: 5.865 đ/yêu cầu = 0,49× [simulated]. Thu hẹp phạm vi vì `quoc_te` 1,88× (thành công 27,3%; lần chạy 2 và 3 chỉ đúng 11,4% và 2,2%) và `doi_tac` 0,85× (sát ngưỡng, có điều khoản riêng); `noi_dia` 0,22×, `hang_nang` 0,69× [simulated] | Giả lập | PM trợ lý hoàn phí |
 | 4 · Chỉ số chính, chỉ số dùng, chỉ số an toàn | Chỉ số trong đợt chạy thử (1.200 yêu cầu, chưa có nhóm đối chứng nên chưa quy được cho trợ lý): **chính** (đóng trong 24 giờ và không mở lại trong 7 ngày) **82,83%** (994/1.200) · **dùng** (tỉ lệ bỏ qua gợi ý: sửa + bỏ / số được xem lại) **27,12%** (48/177) · **an toàn** (mở lại trong 7 ngày) **4,25%** (51/1.200). Riêng phạm vi `noi_dia` + `hang_nang`: 92,26% · 21,09% · 3,97% | Xong, có bằng chứng | Trưởng nhóm CSKH |
 | 5 · Bảng lỗi và cách khắc phục | ... | ... | ... |
-| 6 · Pilot plan | ... | ... | ... |
+| 6 · Pilot plan | Chi tiết trong `pilot_plan.yaml`. **Chia theo nhân viên, 20 + 20 cụm**, bốc thăm ngẫu nhiên (seed ghi trước, phân tầng theo depot), đối chứng chạy cùng thời gian; phạm vi `noi_dia` + `hang_nang`. Theo yêu cầu thì cần 1.251/nhóm, nhưng cả 20 nhân viên/nhóm cũng chỉ đạt tối đa 1.000 hiệu dụng, nên **chấp nhận mức chênh tối thiểu (MDE) 6 điểm**: 859/nhóm, m ≥ 299 yêu cầu/người, hệ số thiết kế 6,96. **Con số bất lợi:** nếu tác động thật chỉ 5 điểm thì power chỉ còn **0,64**. Có 3 luật dừng NẾU – TRONG – THÌ – KHÔNG THÌ: (1) an toàn: mở lại cao hơn đối chứng ≥ 2 điểm hoặc vượt 6% (hiện 3,97%), hoặc có ≥ 1 ca hoàn trùng; (2) chi phí > 8.000 đ hoặc làm lại > 7%/tuần; (3) bỏ qua gợi ý > 40%. Tắt trợ lý trong 30 phút; ngày quyết định 2027-01-05 | Xong, có bằng chứng | Giám đốc vận hành |
 | 7 · Rủi ro kinh tế | 3 rủi ro, chi tiết trong `chi_so.md` (E2): **(1) Xem lại 100% kéo dài:** 11.743 đ = **0,98×**, hoặc 12.415 đ = **1,03×** nếu làm lại 15,3 phút như dữ liệu; chỉ hoà vốn khi mỗi lần xem lại ≤ 4,8–5,1 phút [simulated]. Theo dõi: % được xem lại > 50% cuối bước 0.25 · **(2) Số ca làm lại tăng gấp đôi:** +51,8%, lên 6.787 đ [simulated]. Theo dõi: tỉ lệ làm lại theo tuần > 7% (chạy thử 4,89%) · **(3) Khối lượng còn một nửa:** cố định tăng từ +1.185 lên +2.370 đ/việc, 0,38× → 0,48× [simulated]. Theo dõi: việc thành công/tuần < 4.219 | Giả lập | PM trợ lý hoàn phí |
 
 **Đề xuất:** Go · Go có điều kiện · No-go (giữ một). Go có điều kiện: ghi từng điều kiện, người phụ trách, ngày kiểm tra. No-go: ghi việc phải làm để quay lại cổng.
