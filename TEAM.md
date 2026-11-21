@@ -14,7 +14,7 @@
 | 1   | Nguyễn Viết Mạnh Khải | 2A202603664 | manhkhai205@gmail.com   |        | **Người gắn nhãn 1** |
 | 2   | Nguyễn Đình Quang     | 2A202603620 | quang8b9b@gmail.com     |        | **Người viết code**  |
 | 3   | Vũ Đức Anh            | 2A202603573 | vuducanh039@gmail.com   |        | **Người kiểm số**    |
-| 4   | Nguyễn Cảnh Hiếu      | 2A202603667 | hieucoi098765@gmail.com |        | **Người gắn nhãn 2** |
+| 4   | Nguyễn Cảnh Hiếu      | 2A202603667 | hieucoi098765@gmail.com | canhhieu02 | **Người gắn nhãn 2, kiêm giữ hồ sơ** |
 
 Bốn vai của lab:
 
@@ -67,3 +67,20 @@ Sao chép mục dưới đây cho từng thành viên.
 
 - Commit `0cf3f47` (`CP1-CP2: hoan thanh bang_chi_phi.md (Nguoi kiem so)`).
 - Các file `report/team/bang_chi_phi.md`, `report/team/pilot_plan.yaml`, `report/team/chi_so.md`, `report/team/2A202603573_VuDucAnh.md` và tính tay kiểm chứng ca `RF-70012` (`8.406,01 đ`, `có phần simulated`).
+
+## Nguyễn Cảnh Hiếu - 2A202603667
+
+### Phần việc phụ trách
+
+- **Người gắn nhãn 2, kiêm giữ hồ sơ:** điền dần `report/team/ho_so_launch_v0.md` từ đầu buổi; gắn nhãn độc lập 20 ca lỗi ở CP3 và hoàn thiện phần so nhãn trong `report/team/bang_loi.md`; đối chiếu số giữa hồ sơ và các file của nhóm.
+
+### Đóng góp cụ thể
+
+- Hoàn thiện hồ sơ launch v0: đủ 7 mục, mỗi mục có con số chính, trạng thái và vai trò phụ trách. Đề xuất **Go có điều kiện** cho `noi_dia` + `hang_nang`, nêu hai con số bất lợi (xem lại 100% là 0,98–1,03× [simulated]; power 0,64) và 5 điều kiện có người phụ trách, ngày kiểm tra.
+- Gắn độc lập 20/20 ca lỗi. Đồng thuận với Người gắn nhãn 1 là **20/20 = 100%**. Viết quy tắc phân biệt cho 6 ca phân vân (6, 8, 9, 13, 18, 20).
+- Chạy lại `src/lab13.py` trên máy thứ hai (ba phép thử ĐẠT) và đối chiếu số trong hồ sơ với `bang_chi_phi.md`, `pilot_plan.yaml`, `chi_so.md`.
+
+### Bằng chứng
+
+- Commit `22dca68`, `e8d0e05`, `cd139cc`, `68a9a6d` (hồ sơ) và `623da98` (`bang_loi.md`).
+- Các file `report/team/ho_so_launch_v0.md`, `report/team/bang_loi.md` (cột "Nhãn người 2", tỉ lệ đồng thuận, quy tắc phân biệt), `report/team/2A202603667_NguyenCanhHieu.md`.
