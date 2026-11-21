@@ -9,12 +9,12 @@
 
 ## Thành viên
 
-| STT | Họ tên | MSSV | Email | GitHub | Vai trò |
-| --: | ------ | ---- | ----- | ------ | ------- |
-|   1 |        |      |       |        |         |
-|   2 |        |      |       |        |         |
-|   3 |        |      |       |        |         |
-|   4 |        |      |       |        |         |
+| STT | Họ tên                | MSSV        | Email                   | GitHub | Vai trò              |
+| --- | --------------------- | ----------- | ----------------------- | ------ | -------------------- |
+| 1   | Nguyễn Viết Mạnh Khải | 2A202603664 | manhkhai205@gmail.com   |        | **Người gắn nhãn 1** |
+| 2   | Nguyễn Đình Quang     | 2A202603620 | quang8b9b@gmail.com     |        | **Người viết code**  |
+| 3   | Vũ Đức Anh            | 2A202603573 | vuducanh039@gmail.com   |        | **Người kiểm số**    |
+| 4   | Nguyễn Cảnh Hiếu      | 2A202603667 | hieucoi098765@gmail.com |        | **Người gắn nhãn 2** |
 
 Bốn vai của lab:
 
