@@ -2,10 +2,10 @@
 
 ## Thông tin nhóm
 
-- Tên nhóm:
-- Lớp: L3A hoặc L3B
-- Repo nhóm: `K5-L3A-DAY13-TenNhom-LaunchEconomics` (xem [SUBMISSION.md](SUBMISSION.md))
-- URL repo, nhánh nộp, commit chốt:
+- Tên nhóm: `GICHADUOC`
+- Lớp: `L3A`
+- Repo nhóm: `K5-L3A-DAY13-GICHADUOC-LaunchEconomics` (xem [SUBMISSION.md](SUBMISSION.md))
+- URL repo, nhánh nộp, commit chốt: https://github.com/manhkhai205/K5-L3A-DAY13-GICHADUOC-LaunchEconomics · nhánh `main` · commit chốt *(cập nhật trước khi nộp)*
 
 ## Thành viên
 
@@ -50,3 +50,20 @@ Sao chép mục dưới đây cho từng thành viên.
 ### Bằng chứng
 
 -
+
+## Vũ Đức Anh - 2A202603573
+
+### Phần việc phụ trách
+
+- **Người kiểm số:** đối chiếu kết quả từ `src/lab13.py`, tính tay kiểm chứng mẫu trên CSV, hoàn thiện `report/team/bang_chi_phi.md`, `report/team/pilot_plan.yaml`, `report/team/chi_so.md` và kiểm tra tính nhất quán của `report/team/ho_so_launch_v0.md`.
+
+### Đóng góp cụ thể
+
+- Kiểm chứng toàn bộ kết quả A1–A4, B1–B4, D1 trong `src/lab13.py` và các tỉ lệ phạm vi `noi_dia + hang_nang` (`92,26% · 21,09% · 3,97%`) trong `report/team/ho_so_launch_v0.md`.
+- Điền đầy đủ bảng A1–A4, B1–B4 trong `report/team/bang_chi_phi.md` kèm nhãn `simulated` và so sánh cả hệ thống (`5.865 đ/yc = 0,49×`).
+- Hoàn thiện kế hoạch pilot trong `report/team/pilot_plan.yaml` (cỡ mẫu `m >= 299`, `DE = 6,96`, power `0,64` ở mức 5 điểm, 3 luật dừng đủ 4 vế) và đặc tả chỉ số, 10 event có `trace_id`, 3 rủi ro kinh tế trong `report/team/chi_so.md`.
+
+### Bằng chứng
+
+- Commit `0cf3f47` (`CP1-CP2: hoan thanh bang_chi_phi.md (Nguoi kiem so)`).
+- Các file `report/team/bang_chi_phi.md`, `report/team/pilot_plan.yaml`, `report/team/chi_so.md`, `report/team/2A202603573_VuDucAnh.md` và tính tay kiểm chứng ca `RF-70012` (`8.406,01 đ`, `có phần simulated`).
