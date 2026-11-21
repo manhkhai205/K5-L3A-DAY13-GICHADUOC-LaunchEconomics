@@ -8,34 +8,42 @@ Người gắn nhãn 1: Nguyễn Viết Mạnh Khải · Người gắn nhãn 2:
 
 | Ca | Nhãn người 1 | Nhãn người 2 | Trùng? | Nhãn thống nhất |
 | --: | --- | --- | --- | --- |
-| 1 | Do người dùng | ... | ... | ... |
-| 2 | Hệ thống | ... | ... | ... |
-| 3 | Ngữ cảnh | ... | ... | ... |
-| 4 | Giới hạn hệ thống | ... | ... | ... |
-| 5 | Ngầm | ... | ... | ... |
-| 6 | Do người dùng | ... | ... | ... |
-| 7 | Hệ thống | ... | ... | ... |
-| 8 | Hệ thống | ... | ... | ... |
-| 9 | Do người dùng | ... | ... | ... |
-| 10 | Ngữ cảnh | ... | ... | ... |
-| 11 | Giới hạn hệ thống | ... | ... | ... |
-| 12 | Ngầm | ... | ... | ... |
-| 13 | Giới hạn hệ thống | ... | ... | ... |
-| 14 | Do người dùng | ... | ... | ... |
-| 15 | Hệ thống | ... | ... | ... |
-| 16 | Ngữ cảnh | ... | ... | ... |
-| 17 | Ngầm | ... | ... | ... |
-| 18 | Ngữ cảnh | ... | ... | ... |
-| 19 | Giới hạn hệ thống | ... | ... | ... |
-| 20 | Hệ thống | ... | ... | ... |
+| 1 | Do người dùng | Do người dùng | Có | Do người dùng |
+| 2 | Hệ thống | Hệ thống | Có | Hệ thống |
+| 3 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
+| 4 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
+| 5 | Ngầm | Ngầm | Có | Ngầm |
+| 6 | Do người dùng | Do người dùng | Có | Do người dùng |
+| 7 | Hệ thống | Hệ thống | Có | Hệ thống |
+| 8 | Hệ thống | Hệ thống | Có | Hệ thống |
+| 9 | Do người dùng | Do người dùng | Có | Do người dùng |
+| 10 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
+| 11 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
+| 12 | Ngầm | Ngầm | Có | Ngầm |
+| 13 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
+| 14 | Do người dùng | Do người dùng | Có | Do người dùng |
+| 15 | Hệ thống | Hệ thống | Có | Hệ thống |
+| 16 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
+| 17 | Ngầm | Ngầm | Có | Ngầm |
+| 18 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
+| 19 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
+| 20 | Hệ thống | Hệ thống | Có | Hệ thống |
 
-**Tỉ lệ đồng thuận:** ... / 20 = ...%
+**Tỉ lệ đồng thuận:** 20 / 20 = 100% (đạt ngưỡng 80%, không phải viết lại định nghĩa)
+
+Phân bố nhãn thống nhất: Do người dùng 4 ca (1, 6, 9, 14) · Hệ thống 5 ca (2, 7, 8, 15, 20) · Ngữ cảnh 4 ca (3, 10, 16, 18) · Giới hạn hệ thống 4 ca (4, 11, 13, 19) · Ngầm 3 ca (5, 12, 17).
 
 ## Quy tắc phân biệt cho các ca không trùng
 
 Mỗi ca không trùng một câu. Đồng thuận dưới 80% thì ghi định nghĩa đã viết lại.
 
-- ... *(Chờ so bộ nhãn độc lập của Người gắn nhãn 2 — Nguyễn Cảnh Hiếu)*
+Không có ca nào không trùng (20/20). Người gắn nhãn 2 đã đánh dấu 6 ca phân vân khi gắn độc lập. Nhóm ghi quy tắc phân biệt cho 6 ca này để người vận hành sau này gắn nhãn nhất quán:
+
+- **Ca 6, 9 · Do người dùng, không phải Hệ thống:** nguyên nhân gốc là khách chọn sai mục hoặc nhập sai loại mã. Việc trợ lý không gợi ý là chỗ cần sửa, ghi ở cột khắc phục, không đổi nhãn.
+- **Ca 8 · Hệ thống, không phải Ngầm:** trợ lý dẫn một điều khoản không có thật, trái thiết kế. Trích dẫn hiện ra cho khách nên sai đã lộ ra. Số tiền đúng không xoá được lỗi.
+- **Ca 13 · Giới hạn hệ thống, không phải Hệ thống:** câu hỏi nằm ngoài phạm vi thì là giới hạn, kể cả khi trợ lý xử lý giới hạn đó kém (trả lời mập mờ). Cách trả lời là chỗ cần sửa.
+- **Ca 18 · Ngữ cảnh, không phải Hệ thống:** số tiền đúng chính sách. Chỉ có giả định "khách hiểu cách tính" là không khớp với khách.
+- **Ca 20 · Hệ thống, không phải Do người dùng:** khách gửi lại sau 10 phút là hành vi hợp lý, không phải đầu vào sai. Nguyên nhân gốc là thiếu khoá chống trùng.
 
 ## Bảng khắc phục cho 5 ca, mỗi loại một ca
 
