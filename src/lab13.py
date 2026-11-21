@@ -44,7 +44,7 @@ def kiem_tra_dap_an_biet_truoc():
     assert abs(so_lan_chay_ky_vong(0.8, 2) - 1.20) < 1e-9
     assert abs(so_lan_chay_ky_vong(0.8) - 1.25) < 1e-9
     assert abs(he_so_chi_phi_moi_viec_thanh_cong(0.8, 3) - 1.25) < 1e-9
-    print("A1: qua ca 3 phep thu (1.20 · 1.25 · 1.25)")
+    print("Ba phép thử đáp án biết trước: ĐẠT")
 
 
 # ---------------------------------------------------------------------------
@@ -126,6 +126,28 @@ def theo_loai(runs, reqs):
     print("\n  Ti le ok (%) theo attempt x loai:")
     print(m.pivot_table(index="attempt", columns="loai", values="ok", aggfunc="mean")
           .mul(100).round(1).to_string())
+
+
+# ---------------------------------------------------------------------------
+# CP1 · A4: chi phí cố định (noi_dia + hang_nang)
+# ---------------------------------------------------------------------------
+CHI_PHI_CO_DINH = 40_000_000   # đ / tháng
+SO_YC_THANG = 45_000           # yêu cầu / tháng toàn công ty
+
+
+def chi_phi_co_dinh(runs, reqs):
+    sub = reqs[reqs["loai"].isin(["noi_dia", "hang_nang"])]
+    kq = mo_hinh(runs, sub)
+    bien_doi = kq["tong"] / kq["thanh_cong"]
+    print("\nA4: chi phi co dinh 40 trieu đ/thang (noi_dia + hang_nang) [simulated]")
+    print(f"  Chi phi bien doi trong pham vi: {kq['tong']:,.0f} đ / {kq['thanh_cong']} viec"
+          f" = {bien_doi:,.0f} đ/viec")
+    for ten, ti_le_luu_luong in [("Toan quy mo", 1.0), ("Nua luu luong (pilot)", 0.5)]:
+        viec_thang = SO_YC_THANG * ti_le_luu_luong * kq["thanh_cong"] / len(reqs)
+        co_dinh = CHI_PHI_CO_DINH / viec_thang
+        tong = bien_doi + co_dinh
+        print(f"  {ten:<22} {viec_thang:>8,.0f} viec/thang | co dinh {co_dinh:,.0f} đ/viec"
+              f" | tong {tong:,.0f} đ = {tong / BASELINE_NGUOI:.2f}x")
 
 
 # ---------------------------------------------------------------------------
@@ -229,5 +251,6 @@ if __name__ == "__main__":
     print("\nA2: toan bo mau")
     in_mo_hinh(mo_hinh(runs, reqs))
     theo_loai(runs, reqs)
+    chi_phi_co_dinh(runs, reqs)
     do_nhay(runs, reqs)
     ke_hoach_mau()
