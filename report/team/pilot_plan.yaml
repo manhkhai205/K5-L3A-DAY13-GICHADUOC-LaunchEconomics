@@ -22,7 +22,7 @@
 
 pilot:
   owner: "Giám đốc vận hành LogiX-VN"
-  scope: "Chỉ noi_dia (2.696 đ = 0,22x) và hang_nang (8.221 đ = 0,69x so với 12.000 đ, simulated) tại 12 depot; loại quoc_te (22.515 đ = 1,88x, thành công 27,3%) và doi_tac (10.215 đ = 0,85x, có điều khoản riêng)"
+  scope: "Chỉ noi_dia (2.696 đ = 0,22x) và hang_nang (8.221 đ = 0,69x so với 12.000 đ, simulated) tại 12 depot; loại quoc_te (22.515 đ = 1,88x [simulated], thành công 27,3%) và doi_tac (10.215 đ = 0,85x [simulated], có điều khoản riêng)"
   assignment:
     unit: "staff"
     control_share: 0.5

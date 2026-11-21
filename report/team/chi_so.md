@@ -28,6 +28,7 @@ Chỉ số trong đợt chạy thử là 82,83% (toàn mẫu) và 92,26% (phạm
 | `ticket_closed` | Hệ thống ticket | `closed_at, closed_within_24h, trace_id` | Khi yêu cầu được đóng |
 | `ticket_reopened` | Khách / CSKH | `reopened_at, reopened_within_7d, reason, trace_id` | Khi khách mở lại yêu cầu |
 | `audit_sample_checked` | Kế toán / QA | `so_tien_da_hoan, so_tien_dung, lech_tien, trace_id` | Hằng tuần khi kiểm tra mẫu 100 đơn |
+| `input_validation_failed` | Cổng CSKH / Agent | `request_id, field, raw_value_type, trace_id` | Khi khách nhập sai định dạng đầu vào (mã đơn sàn TMĐT, thiếu số tài khoản) |
 
 **Kiểm tra chéo:** với mỗi chỉ số ở bảng E1, ghi event dùng để tính. Chỉ số nào không tính được từ danh sách event thì chưa đo được.
 
@@ -37,6 +38,7 @@ Chỉ số trong đợt chạy thử là 82,83% (toàn mẫu) và 92,26% (phạm
 - **Chỉ số an toàn — Lỗi lọt đến khách (`4,25%` chạy thử):** tính từ `ticket_reopened` (`reopened_within_7d = true`) chia `refund_request_created`.
 - **Chỉ số an toàn (tự đề xuất) — Sai tiền / hoàn trùng:** tính từ `audit_sample_checked` và `refund_ledger_write` (`idempotency_key`).
 - **Chi phí thật trong pilot (thay số `simulated`):** nối `agent_run_completed` (token + tool mọi lần chạy) + `staff_review_decision` (`phut_xem_lai` thật) + `staff_rework_completed` (`phut_lam_lai` thật) + `handoff_to_staff` qua `trace_id`; chỉ số nào chưa bật đủ `phut_xem_lai`/`phut_lam_lai` thật thì vẫn là `simulated`, chưa đo được trực tiếp.
+- **Phát hiện lỗi đầu vào người dùng (`bang_loi.md`, ca 9):** tính từ `input_validation_failed` chia tổng `refund_request_created` theo ngày qua `trace_id` (cảnh báo khi vượt 2%/ngày).
 
 ## E2 · Rủi ro kinh tế
 
